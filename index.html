@@ -76,17 +76,15 @@
                 <use xlink:href="./images/icons.svg#icon-close"></use>
               </svg>
             </button>
-            
+
             <form class="form js-speaker-form">
-              <p class="backdrop-title">
-                Залиште свої дані, ми вам передзвонимо
-              </p>
+              <p class="backdrop-title">Залиште свої дані, ми вам передзвонимо</p>
               <div class="form-field">
                 <label for="user-name">Ім'я</label>
                 <svg class="backdrop-icon">
                   <use xlink:href="./images/icons.svg#icon-modal-name"></use>
                 </svg>
-                <input class="form-input" type="text" name="user-name" id="user-name"/>
+                <input class="form-input" type="text" name="user-name" id="user-name" />
               </div>
 
               <div class="form-field">
@@ -94,7 +92,7 @@
                 <svg class="backdrop-icon">
                   <use xlink:href="./images/icons.svg#icon-modal-tel"></use>
                 </svg>
-                <input class="form-input" type="tel" name="tel" id="tel"/>
+                <input class="form-input" type="tel" name="tel" id="tel" />
               </div>
 
               <div class="form-field">
@@ -102,28 +100,36 @@
                 <svg class="backdrop-icon">
                   <use xlink:href="./images/icons.svg#icon-modal-mail"></use>
                 </svg>
-                <input class="form-input" type="email" name="mail" id="mail"/>
+                <input class="form-input" type="email" name="mail" id="mail" />
               </div>
 
               <div class="form-field">
                 <label for="comment">Коментар</label>
-                <textarea 
-                name="comment" 
-                id="comment" 
-                rows="10"
-                placeholder="Введіть текст"
+                <textarea
+                  name="comment"
+                  id="comment"
+                  rows="10"
+                  placeholder="Введіть текст"
                 ></textarea>
               </div>
 
               <div class="form-field policy">
-                <input class="checkbox-input visually-hidden" type="checkbox" name="policy" value="accept" id="policy" />
-                <label class="checkbox-label" for="policy" >
+                <input
+                  class="checkbox-input visually-hidden"
+                  type="checkbox"
+                  name="policy"
+                  value="accept"
+                  id="policy"
+                />
+                <label class="checkbox-label" for="policy">
                   <span>
                     <svg class="check-icon">
                       <use xlink:href="./images/icons.svg#icon-checkbox-active"></use>
                     </svg>
                   </span>
-                  Погоджуюся з розсилкою та приймаю <a class="policy-link" href="">Умови договору</a></label>
+                  Погоджуюся з розсилкою та приймаю
+                  <a class="policy-link" href="">Умови договору</a></label
+                >
               </div>
 
               <button class="modal-btn" type="submit">Відправити</button>
@@ -512,7 +518,13 @@
           <form>
             <label class="subscribe-text" for="subscribe">Підпишіться на розсилку</label>
             <div class="subscribe">
-              <input class="subscribe-input" type="email" name="mail" id="subscribe" placeholder="E-mail" />
+              <input
+                class="subscribe-input"
+                type="email"
+                name="mail"
+                id="subscribe"
+                placeholder="E-mail"
+              />
               <button type="submit" class="subscribe-btn">Підписатися</button>
               <svg class="subscribe-icon">
                 <use xlink:href="./images/icons.svg#icon-subscribe"></use>
@@ -520,15 +532,8 @@
             </div>
           </form>
         </div>
-
       </div>
     </footer>
-
-
-
-
-
-    
 
     <script>
       const { height: pageHeaderHeight } = document
@@ -559,9 +564,7 @@
         document.querySelector('.js-speaker-form').addEventListener('submit', e => {
           e.preventDefault();
 
-          new FormData(e.currentTarget).forEach((value, name) =>
-            console.log(`${name}: ${value}`),
-          );
+          new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`));
 
           e.currentTarget.reset();
         });
