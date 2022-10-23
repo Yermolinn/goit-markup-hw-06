@@ -84,7 +84,7 @@
                 <svg class="backdrop-icon">
                   <use xlink:href="./images/icons.svg#icon-modal-name"></use>
                 </svg>
-                <input class="form-input" type="text" name="user-name" id="user-name" />
+                <input class="form-input" type="text" name="user-name" id="user-name" required/>
               </div>
 
               <div class="form-field">
@@ -92,7 +92,7 @@
                 <svg class="backdrop-icon">
                   <use xlink:href="./images/icons.svg#icon-modal-tel"></use>
                 </svg>
-                <input class="form-input" type="tel" name="tel" id="tel" />
+                <input class="form-input" type="tel" name="tel" id="tel" required/>
               </div>
 
               <div class="form-field">
@@ -100,12 +100,13 @@
                 <svg class="backdrop-icon">
                   <use xlink:href="./images/icons.svg#icon-modal-mail"></use>
                 </svg>
-                <input class="form-input" type="email" name="mail" id="mail" />
+                <input class="form-input" type="email" name="mail" id="mail" required />
               </div>
 
-              <div class="form-field">
+              <div class="form-field ">
                 <label for="comment">Коментар</label>
                 <textarea
+                  class="comment-active"
                   name="comment"
                   id="comment"
                   rows="10"
@@ -121,7 +122,7 @@
                   value="accept"
                   id="policy"
                 />
-                <label class="checkbox-label" for="policy">
+                <label class="checkbox-label" for="policy" required>
                   <span>
                     <svg class="check-icon">
                       <use xlink:href="./images/icons.svg#icon-checkbox-active"></use>
@@ -131,7 +132,6 @@
                   <a class="policy-link" href="">Умови договору</a></label
                 >
               </div>
-
               <button class="modal-btn" type="submit">Відправити</button>
             </form>
           </div>
@@ -525,10 +525,11 @@
                 id="subscribe"
                 placeholder="E-mail"
               />
-              <button type="submit" class="subscribe-btn">Підписатися</button>
-              <svg class="subscribe-icon">
-                <use xlink:href="./images/icons.svg#icon-subscribe"></use>
-              </svg>
+              <button type="submit" class="subscribe-btn">Підписатися 
+                <svg class="subscribe-icon">
+                  <use xlink:href="./images/icons.svg#icon-subscribe"></use>
+                </svg>
+              </button>
             </div>
           </form>
         </div>
